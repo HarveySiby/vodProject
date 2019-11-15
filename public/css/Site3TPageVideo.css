@@ -1,0 +1,102 @@
+body{
+margin: 0px;
+padding: 0px;
+background-image: url("fondecran.png");
+background-repeat: no-repeat;
+min-height: 100vh;
+min-width: 100vw;
+background-size: cover;
+font-family: arial black;
+color: white;
+}
+
+/* BLOC HEADER COMPLET */
+#blocHearder{
+	display: flex;
+	justify-content: space-between;
+}
+
+/* BLOC AVEC LOGO ET CONTACT */
+#blocLogo{
+	display: flex;
+	flex-direction: column;
+}
+
+#logo{
+	height: 3em;
+	width: 6em;
+}
+
+.contact{
+	border: 1px solid red;
+	background-color: black;
+	font-size: xx-small;
+	text-align: center;
+}
+
+/* BLOC PHOTO AVEC H1 */
+#blocphoto{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#photoprofil{
+	height: 130px; 
+	width: 130px;
+	border-radius: 50%;
+}
+
+#blocRecherche{
+	display: flex;
+	font-size: x-small;
+	height: 25px;
+}
+
+/* BLOC CENTRAL STOCKAGE VIDEO */
+
+#stockageVideo{
+	border: 1px solid red;
+	height: 500px;
+	width: 100%;
+}
+
+
+/***** BLOC ****/ #logoFooter{
+display: flex;
+justify-content: center;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+.facebook{
+margin-right: 15px;
+width: 30px;
+height: 30px;
+border-radius: 10px 10px;
+}
+.snapchat{
+margin-right: 15px;
+width: 30px;
+height: 30px;
+border-radius: 10px 10px;
+}
+.youtube{
+margin-right: 15px;
+width: 30px;
+height: 30px;
+border-radius: 10px 10px;
+}
+.instagram{
+margin-right: 15px;
+width: 30px;
+height: 30px;
+border-radius: 10px 10px;
+}
+/******** BLOC *****/ #mentionsLégales{
+display: flex;
+justify-content: space-around;
+font-size: xx-small;
+margin-left: 400px;
+margin-right: 400px;
+color: grey;
+}
