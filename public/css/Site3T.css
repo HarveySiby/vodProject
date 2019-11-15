@@ -1,142 +1,186 @@
-body{
-margin: 0;
-padding: 0;
-background-image: url("fondecran.png");
-background-repeat: no-repeat;
-min-height: 100vh;
-min-width: 100vw;
-background-size: cover;
-font-family: arial black;
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("fondecran.png");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: cover;
+    font-family: arial black;
 }
-h1{
-display: flex;
-justify-content: center;
-color: white;
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
 }
-/**** BLOC ****/ #burger{
-margin-left: 70px;
+
+
+/**** BLOC ****/
+
+#burger {
+    margin-left: 70px;
 }
-.burger{
-width: 40px;
-height: 6px;
-background-color: white;
-margin: 6px 0;
-border-radius: 10px 10px;
+
+.burger {
+    width: 40px;
+    height: 6px;
+    background-color: white;
+    margin: 6px 0;
+    border-radius: 10px 10px;
 }
-#logo{
-position: relative;
-margin-left: 42%;
-height: 8em;
-width: 15;
+
+#logo {
+    position: relative;
+    margin-left: 42%;
+    height: 8em;
+    width: 15;
 }
-/****** BLOC ******/ #box1{
-display: flex;
+
+
+/****** BLOC ******/
+
+#box1 {
+    display: flex;
 }
-/***** BLOC ****/ #application{
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 110%;
-height: auto;
-color: white;
-padding-top: 20px;
+
+
+/***** BLOC ****/
+
+#application {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110%;
+    height: auto;
+    color: white;
+    padding-top: 20px;
 }
-.appliTitre{
-display: flex;
-justify-content: center;
-border: 2px solid white;
-border-radius: 10px 10px;
-background-color: black;
-width: 180px;
-padding: 10px;
+
+.appliTitre {
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 10px 10px;
+    background-color: black;
+    width: 180px;
+    padding: 10px;
 }
-#googlePlay{
-margin-top: 50px;
-width: 180px;
-height: 40px;
+
+#googlePlay {
+    margin-top: 50px;
+    width: 180px;
+    height: 40px;
 }
-#appleStore{
-width: 200px;
-height: 60px;
+
+#appleStore {
+    width: 200px;
+    height: 60px;
 }
-/***** BLOC SLIDER ****/#demo{
-display: flex;
+
+
+/***** BLOC SLIDER ****/
+
+#demo {
+    display: flex;
 }
-/***** BLOC ****/ #connexion{
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-width: 100%;
-height: auto;
-color: white;
-margin-right: 25px;
+
+
+/***** BLOC ****/
+
+#connexion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    color: white;
+    margin-right: 25px;
 }
-#nouveaumembre{
-display: flex;
-flex-direction: column;
-align-items: center;
-border: 2px solid white;
-border-radius: 10px 10px;
-background-color: black;
-padding: 15px;
+
+#nouveaumembre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 10px 10px;
+    background-color: black;
+    padding: 15px;
 }
-#dejamembre{
-display: flex;
-flex-direction: column;
-align-items: center;
-border: 2px solid white;
-border-radius: 10px 10px;
-background-color: black;
-padding: 15px;
+
+#dejamembre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 10px 10px;
+    background-color: black;
+    padding: 15px;
 }
-input{
-border-radius: 5px 5px;
-text-align: center;
-font-size: small;
+
+input {
+    border-radius: 5px 5px;
+    text-align: center;
+    font-size: small;
 }
-button{
-cursor: pointer;
-background-color: red;
-margin-top: 20px;
-margin-bottom: 10px;
-font-size: x-small;
+
+button {
+    cursor: pointer;
+    background-color: red;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: x-small;
 }
-/***** BLOC ****/ #logoFooter{
-display: flex;
-justify-content: center;
-margin-top: 25px;
-margin-bottom: 25px;
+
+
+/***** BLOC ****/
+
+#logoFooter {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
-.facebook{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
+
+.facebook {
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px 10px;
 }
-.snapchat{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
+
+.snapchat {
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px 10px;
 }
-.youtube{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
+
+.youtube {
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px 10px;
 }
-.instagram{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
+
+.instagram {
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px 10px;
 }
-/******** BLOC *****/ #mentionsLégales{
-display: flex;
-justify-content: space-around;
-font-size: xx-small;
-margin-left: 400px;
-margin-right: 400px;
-color: grey;
+
+
+/******** BLOC *****/
+
+#mentionsLégales {
+    display: flex;
+    justify-content: space-around;
+    font-size: xx-small;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: grey;
 }
+
+@media screen and (max-width: 570px) {}
