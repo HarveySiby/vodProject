@@ -1,7 +1,7 @@
 body{
 margin: 0;
 padding: 0;
-background-image: url("fondecran.png");
+background-image: url("../../public/img/fondecran.png");
 background-repeat: no-repeat;
 min-height: 100vh;
 min-width: 100vw;
