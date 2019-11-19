@@ -1,0 +1,95 @@
+body{
+margin: 0;
+padding: 0;
+background-image: url("../../public/img/fondecran.png");
+background-repeat: no-repeat;
+min-height: 100vh;
+min-width: 100vw;
+background-size: cover;
+font-family: arial black;
+color: white;
+}
+
+/****** SECTION CONTENEUR ********/
+#conteneur{
+	display: flex;
+	justify-content: space-around;
+	margin-left: 2%;
+}
+
+/****** BLOC LEFT + ICON ********/
+.blocLeft{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 15%;
+}
+
+#logo{
+	height: 3em;
+	width: 5em;
+	margin-bottom: 5%;
+}
+
+.live{
+	border: 1px solid red;
+	background-color: black;
+	color: white;
+	width: 90%;
+	text-align: center;
+}
+
+/****** BLOC CENTRAL + ICON ********/
+.blocCentral{
+	display: flex;
+	width: 55%;
+	flex-direction: column;
+	padding-top: 3%;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/****** BLOC RIGHT + ICON ********/
+.blocRight{
+	display: flex;
+	flex-direction: column;
+	padding-top: 2.5%;	
+	margin-right: 5%;
+	height: 700px;
+	width: 20%;
+}
+
+.like,.dontLike{
+	font-size: xx-large;
+}
+
+.facebookIcon,.instagramIcon,.youtubeIcon,.snapchatIcon,.shareIcon, .downloadIcon{
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+}
+
+/***** BLOC FOOTER ****/ 
+#logoFooter{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.facebook,.snapchat,.youtube,.instagram{
+	margin-right: 10px;
+	width: 20px;
+	height: 30px;
+	border-radius: 10px 10px;
+}
+
+/******** BLOC MENTIONS LEGALES *****/ 
+#mentionsLégales{
+	display: flex;
+	justify-content: space-around;
+	font-size: xx-small;
+	margin-left: 300px;
+	margin-right: 300px;
+	color: grey;
+}

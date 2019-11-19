@@ -8,79 +8,80 @@ min-width: 100vw;
 background-size: cover;
 font-family: arial black;
 }
-h1{
-display: flex;
-justify-content: center;
-color: white;
-}
 
+/********** BLOC HEADER **********/
 #blocHeader{
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 2%;
 }
 
 .logo{
-height: 3em;
-width: 7em;
+	height: 4em;
+	width: 8em;
 }
 
+.titreContact{
+	display: flex;
+	justify-content: center;
+	margin-left: 40%;
+	margin-top: 10%;
+	color: red;
+	background-color: black;
+	border: 3px solid white;
+	width: 6em;
+	border-radius: 10px 10px; 
+}
+#blocRecherche{
+	display: block;
+	font-size: small;
+}
+
+/*********** BLOC CENTRAL ********/
 .blocMailBlaze{
 	display: flex;
 	justify-content: space-between;
+	margin-left: 9%;
+	margin-right: 9%;
 	margin-top: 5%;
 	margin-bottom: 2%;
-
+	color: white;
 }
 
+.mail, .blaze{
+	border-radius: 10px 10px; 
+}
 
+/*********** BLOC TEXTAREA *********/
 .blocTextarea{
 	display: flex;
-	border: 1px solid white;
-	width: 50%;
-	height: 300px;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	margin-left: 20%;
+	margin-right:20%;
 }
 
-
-
-
-
-
-/***** BLOC ****/ #logoFooter{
-display: flex;
-justify-content: center;
-margin-top: 25px;
-/*margin-bottom: 25px;*/
+/********** BLOC FOOTER *******/ 
+#logoFooter{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-.facebook{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
+
+.youtube,.instagram,.snapchat,.facebook{
+	margin-right: 15px;
+	width: 30px;
+	height: 30px;
+	border-radius: 10px 10px;
 }
-.snapchat{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
-}
-.youtube{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
-}
-.instagram{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
-}
-/******** BLOC *****/ #mentionsLégales{
-display: flex;
-justify-content: space-around;
-font-size: xx-small;
-margin-left: 400px;
-margin-right: 400px;
-color: grey;
+
+/************** BLOC MENTIONS LEGALES *********/ #mentionsLégales{
+	display: flex;
+	justify-content: space-around;
+	font-size: xx-small;
+	margin-left: 400px;
+	margin-right: 400px;
+	color: grey;
 }
