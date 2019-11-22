@@ -1,153 +1,239 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <title>WWW.3T.COM</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-   <!--  <script src="public/js/Site3T.js" type="text/js"></script> -->
-    <link rel="stylesheet" type="text/css" href="public/css/Site3T.css">
-    <script src="public/js/JQUERY-3.4.1.js"></script>
-</head>
-<!----------------------------------------------------- FOND D'ECRAN ET LOGO -->
 
-<body>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="public/js/Site3T.js" type="text/js"></script>
+    <link rel="stylesheet" type="text/css" href="public/css/Site3T.css" />
+
+    <script src="public/js/JQUERY-3.4.1.js"></script>
+  </head>
+  <!----------------------------------------------------- FOND D'ECRAN ET LOGO -->
+
+  <body>
     <section>
-            <header>
-                <img src="public/img/LOGO.png" id="logo" alt="logo">
-            </header>
-                <div id="burger">
-                    <div class="burger"></div>
-                    <div class="burger"></div>
-                    <div class="burger"></div>
-                </div>
-            <h1>ETALE TON TALENT !!</h1>
+      <header>
+        <img src="public/img/LOGO.png" id="logo" alt="logo" />
+      </header>
+      <!-- <div id="burger">
+        <div class="burger"></div>
+        <div class="burger"></div>
+        <div class="burger"></div>
+      </div> -->
+      <h1>ETALE TON TALENT !!</h1>
     </section>
-<!--------------------------------------------------- BOX APPLICATION -->
+    <!--------------------------------------------------- BOX APPLICATION -->
     <section>
-        <section id="box1">
-                <article id="application">
-                    <h5 class="appliTitre" onclick="myFunction()">AUTEUR</h5>
-                    <h5 class="appliTitre" onclick="myFunction2()">INTERPRÊTE</h5>
-                    <h5 class="appliTitre" onclick="myFunction3()">COMPOSITEUR</h5>
-                    <a href="https://play.google.com/store?hl=fr"><img src="public/img/googleplay.png" alt="googlePlay" id="googlePlay"></a>
-                    <a href="https://apps.apple.com/fr/app/apple-store/id375380948"><img src="public/img/applestore.png" alt="appleStore" id="appleStore"></a>
-                </article>
-<!----------------------------------------------------- BOX SLIDER VIDEO -->
-                <article>
-                    <div id="demo" class="carousel slide" data-ride="carousel">
-                        <ul class="carousel-indicators">
-                            <li data-target="#demo" data-slide-to="0" class="active"></li>
-                            <li data-target="#demo" data-slide-to="1"></li>
-                            <li data-target="#demo" data-slide-to="2"></li>
-                            <li data-target="#demo" data-slide-to="3"></li>
-                            <li data-target="#demo" data-slide-to="4"></li>
-                        </ul>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <video width="900" height="450" controls autoplay="true" autobuffer="true" muted>
-    									<source src="video8.mp4" type="video/mp4">
-    									<div class="carousel-caption">
-    										<h3>New York</h3>
-    										<p>We love the Big Apple!</p>
-    									</div>
-    								</video>
-                            </div>
-                            <div class="carousel-item">
-                                <video width="900" height="450" controls autoplay="true" autobuffer="true" muted>
-    									<source src="video7.mp4" type="video/mp4">
-    									<div class="carousel-caption">
-    										<h3>Los Angeles</h3>
-    										<p>We had such a great time in LA!</p>
-    									</div>
-    								</video>
-                            </div>
-                            <div class="carousel-item">
-                                <video width="900" height="450" controls autoplay="true" autobuffer="true" muted>
-    									<source src="video6.mp4" type="video/mp4">
-    									<div class="carousel-caption">
-    										<h3>Los Angeles</h3>
-    										<p>We had such a great time in LA!</p>
-    									</div>
-    								</video>
-                            </div>
-                            <div class="carousel-item">
-                                <video width="900" height="450" controls autoplay="true" autobuffer="true" muted>
-    									<source src="video5.mp4" type="video/mp4">
-    									<div class="carousel-caption">
-    										<h3>Chicago</h3>
-    										<p>Thank you, Chicago!</p>
-    									</div>
-    								</video>
-                            </div>
-                            <div class="carousel-item">
-                                <video width="900" height="450" controls autoplay="true" autobuffer="true" muted>
-    									<source src="video4.mp4" type="video/mp4">
-    									<div class="carousel-caption">
-    										<h3>New York</h3>
-    										<p>We love the Big Apple!</p>
-    									</div>
-    								</video>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next"><span class="carousel-control-next-icon"></span></a>
-                    </div>
-                </article>
-<!------------------------------------------------------- CONNEXION/INSCRIPTION -->
-                <article id="connexion">
-                    <div id="nouveaumembre">
-                        <h5>Nouveau Membre</h5>
-                        <input type="text" name="text" placeholder="ton blaze">
-                        <input type="email" name="email" placeholder="email@hotmail.fr...">
-                        <input type="password" name="password" placeholder="ton mot de passe...">
-                        <button onclick="window.location.href='file:///C:/Users/bessa/Documents/SIMPLON/WireFrame%20Desktop%20Herv%C3%A9/Site3TPROFIL.html'" type="button">Inscription</button>
-                    </div>
-                    <div id="dejamembre">
-                        <h5>Membre</h5>
-                        <input type="email" name="email" placeholder="email@hotmail.fr">
-                        <input type="password" name="password" placeholder="ton mot de passe">
-                        <button onclick="window.location.href='///C:/Users/bessa/Documents/SIMPLON/PROJET%20VOD%203T/WireFrame%20Desktop%20Herv%C3%A9/Site3TPROFIL.html'" type="button">Connexion</button>
-                    </div>
-                </article>
-        </section>
-<!---------------------------------------------------------------------FOOTER -->
-        <footer>
-            <div id="logoFooter">
-                <a href="https://fr-fr.facebook.com/"><img src="public/img/facebook.jpg" alt="facebook" class="facebook"></a>
-                <a href="https://www.instagram.com/"><img src="public/img/instagram.png" alt="insatgram" class="instagram"></a>
-                <a href="https://www.snapchat.com"><img src="public/img/snapchat.png" alt="snapchat" class="snapchat"></a>
-                <a href="https://www.youtube.com/"><img src="public/img/youtube.png" alt="youtube" class="youtube"></a>
+      <section id="box1">
+        <article id="application">
+          <h5 class="appliTitre" onclick="myFunction()">AUTEUR</h5>
+          <h5 class="appliTitre" onclick="myFunction2()">INTERPRÊTE</h5>
+          <h5 class="appliTitre" onclick="myFunction3()">COMPOSITEUR</h5>
+          <a href="https://play.google.com/store?hl=fr"
+            ><img
+              src="public/img/googleplay.png"
+              alt="googlePlay"
+              id="googlePlay"
+          /></a>
+          <a href="https://apps.apple.com/fr/app/apple-store/id375380948"
+            ><img
+              src="public/img/applestore.png"
+              alt="appleStore"
+              id="appleStore"
+          /></a>
+        </article>
+        <!----------------------------------------------------- BOX SLIDER VIDEO -->
+        <article id="video">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+              <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <video
+                  width="900"
+                  height="450"
+                  controls
+                  autoplay="true"
+                  autobuffer="true"
+                  muted
+                >
+                  <source src="video8.mp4" type="video/mp4" />
+                  <div class="carousel-caption">
+                    <h3>New York</h3>
+                    <p>We love the Big Apple!</p>
+                  </div>
+                </video>
+              </div>
+              <div class="carousel-item">
+                <video
+                  width="900"
+                  height="450"
+                  controls
+                  autoplay="true"
+                  autobuffer="true"
+                  muted
+                >
+                  <source src="video7.mp4" type="video/mp4" />
+                  <div class="carousel-caption">
+                    <h3>Los Angeles</h3>
+                    <p>We had such a great time in LA!</p>
+                  </div>
+                </video>
+              </div>
+              <div class="carousel-item">
+                <video
+                  width="900"
+                  height="450"
+                  controls
+                  autoplay="true"
+                  autobuffer="true"
+                  muted
+                >
+                  <source src="video6.mp4" type="video/mp4" />
+                  <div class="carousel-caption">
+                    <h3>Los Angeles</h3>
+                    <p>We had such a great time in LA!</p>
+                  </div>
+                </video>
+              </div>
+              <div class="carousel-item">
+                <video
+                  width="900"
+                  height="450"
+                  controls
+                  autoplay="true"
+                  autobuffer="true"
+                  muted
+                >
+                  <source src="video5.mp4" type="video/mp4" />
+                  <div class="carousel-caption">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago!</p>
+                  </div>
+                </video>
+              </div>
+              <div class="carousel-item">
+                <video
+                  width="900"
+                  height="450"
+                  controls
+                  autoplay="true"
+                  autobuffer="true"
+                  muted
+                >
+                  <source src="video4.mp4" type="video/mp4" />
+                  <div class="carousel-caption">
+                    <h3>New York</h3>
+                    <p>We love the Big Apple!</p>
+                  </div>
+                </video>
+              </div>
             </div>
-            <div id="mentionsLégales">
-                <p>Légal</p>
-                <p>Centre de confidentialité</p>
-                <p>Protection des données</p>
-                <p>Cookies</p>
-                <p>&Agrave propos des pubs</p>
-                <p>©2019 3T French-Society</p>
-            </div>
-        </footer>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev"
+              ><span class="carousel-control-prev-icon"></span
+            ></a>
+            <a class="carousel-control-next" href="#demo" data-slide="next"
+              ><span class="carousel-control-next-icon"></span
+            ></a>
+          </div>
+        </article>
+        <!------------------------------------------------------- CONNEXION/INSCRIPTION -->
+        <article id="connexion">
+          <div id="nouveaumembre">
+            <h5>Nouveau Membre</h5>
+            <input type="text" name="text" placeholder="ton blaze" />
+            <input
+              type="email"
+              name="email"
+              placeholder="email@hotmail.fr..."
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="ton mot de passe..."
+            />
+            <button
+              onclick="window.location.href='file:///C:/Users/bessa/Documents/SIMPLON/WireFrame%20Desktop%20Herv%C3%A9/Site3TPROFIL.html'"
+              type="button"
+            >
+              Inscription
+            </button>
+          </div>
+          <br />
+          <div id="dejamembre">
+            <h5>Membre</h5>
+            <input type="email" name="email" placeholder="email@hotmail.fr" />
+            <input
+              type="password"
+              name="password"
+              placeholder="ton mot de passe"
+            />
+            <button
+              onclick="window.location.href='///C:/Users/bessa/Documents/SIMPLON/PROJET%20VOD%203T/WireFrame%20Desktop%20Herv%C3%A9/Site3TPROFIL.html'"
+              type="button"
+            >
+              Connexion
+            </button>
+          </div>
+        </article>
+      </section>
+      <!---------------------------------------------------------------------FOOTER -->
+      <footer>
+        <div id="logoFooter">
+          <a href="https://fr-fr.facebook.com/"
+            ><img src="public/img/facebook.jpg" alt="facebook" class="facebook"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img
+              src="public/img/instagram.png"
+              alt="insatgram"
+              class="instagram"
+          /></a>
+          <a href="https://www.snapchat.com"
+            ><img src="public/img/snapchat.png" alt="snapchat" class="snapchat"
+          /></a>
+          <a href="https://www.youtube.com/"
+            ><img src="public/img/youtube.png" alt="youtube" class="youtube"
+          /></a>
+        </div>
+        <div id="mentionsLégales">
+          <p>
+            Légal Centre de confidentialité <br />
+            Protection des données Cookies &Agrave propos des pubs
+            <br />
+            ©2019 3T French-Society
+          </p>
+        </div>
+      </footer>
     </section>
 
     <script>
-        function myFunction() {
-            alert("Tout d'abord, INSCRIT TOI ET REJOINS NOUS !!");
-        }
+      function myFunction() {
+        alert("Tout d'abord, INSCRIT TOI ET REJOINS NOUS !!");
+      }
 
-        function myFunction2() {
-            alert("Tu as déjà un compte ? ALORS CONNECTE TOI ET REJOINS NOUS !!");
-        }
+      function myFunction2() {
+        alert("Tu as déjà un compte ? ALORS CONNECTE TOI ET REJOINS NOUS !!");
+      }
 
-        function myFunction3() {
-            alert("Tu dois créer un profil pour rentrer dans le cercle !!");
-        }
+      function myFunction3() {
+        alert("Tu dois créer un profil pour rentrer dans le cercle !!");
+      }
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>
