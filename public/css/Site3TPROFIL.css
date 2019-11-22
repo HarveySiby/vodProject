@@ -1,140 +1,227 @@
-body{
-margin: 0px;
-padding: 0px;
-background-image: url("../../public/img/fondecran.png");
-background-repeat: no-repeat;
-min-height: 100vh;
-min-width: 100vw;
-background-size: cover;
-font-family: arial black;
-color: white;
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  background-image: url("../../public/img/fondecran.png");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-size: cover;
+  font-family: arial black;
+  color: white;
+}
+#logo {
+  width: 15vw;
+  /* border: 4px solid cyan; */
+}
+#blocLeft {
+  /* border: 4px solid coral; */
+}
+h1 {
+  display: flex;
+  justify-content: center;
 }
 
-h1{
-display: flex;
-justify-content: center;
+.titre {
+  /* border: 1px solid orange; */
+  background-color: black;
+  width: 20vw;
+  text-align: center;
+  padding: 2% 2% 2% 2%;
+}
+.pSpecial {
+  padding: 2% 0% 2% 0%;
 }
 
-.titre{
-	border: 1px solid red;
-	background-color: black;
-	width: 330px;
-	text-align: center;
+#conteneur {
+  /* border: yellow solid 4px; */
 }
 
-#conteneur{
-	display: flex;
-}
-
-.formulaire{
-	display: block;
-	margin-left: 25%;
-	font-size: small;
+.formulaire {
+  font-size: small;
 }
 
 /* BLOC LEFT */
-#blocLeft{
-	display: flex;
-	flex-direction: column;
-	margin-left: 2%;
+#blocLeft {
+  display: flex;
+  justify-content: space-around;
+  /* border: 4px solid greenyellow; */
+  align-items: center;
 }
-
-#logo{
-	height: 3em;
-	width: 6em;
-	margin-top: 2.5%;
-	margin-bottom: 62%;
-}
-
 
 /* BLOC CENTRAL */
-#blocCentral{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-left: 10%;
+#blocCentral {
+  /* border: 4px solid goldenrod; */
+  display: flex;
+  width: 98vw;
+  justify-content: space-around;
+  padding: 3% 15% 2% 17%;
 }
 
-#blocphoto{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 7%;
+#blocCentral form {
+  /* border: 4px solid red; */
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#catTalent .formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 4px solid rgb(221, 112, 40); */
 }
 
-#photoprofil{
-	height: 130px; 
-	width: 130px;
-	border-radius: 50%;
+#catTalent .formulaire fieldset {
+  /* border: 4px solid greenyellow; */
+  width: 20vw;
+  padding: 0 0 0 25%;
 }
 
-textarea{
-	display: flex;
-	margin-top: 8%;
-	margin-bottom: 8%;
-	width: 500px;
-	height: 210px;
+#blocphoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 5% 0 0;
+  /* border: 4px solid violet; */
 }
 
+#photoprofil {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+textarea {
+  display: flex;
+  width: 40vw;
+}
 
 /* BLOC RIGHT */
-#blocRight{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-left: 11%;
+#blocRight {
+  /* border: pink solid 4px; */
+  display: flex;
+  justify-content: center;
 }
 
-#photodownload{
-	height: 60px; 
-	width: 60px;
-	padding: 5px;
-	border-radius: 25%;
-	display: inline-block;
+#photodownload {
+  height: 60px;
+  width: 60px;
+  padding: 5px;
+  border-radius: 25%;
+  display: inline-block;
 }
 
-#catFans{
-	margin-top: 57%;
+#catFans {
 }
 
+/***** BLOC ****/
+#logoFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.facebook,
+.snapchat,
+.youtube,
+.instagram {
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px 10px;
+}
 
+/******** BLOC *****/
+#mentionsLégales {
+  font-size: xx-small;
+  color: grey;
+}
 
+#mentionsLégales {
+  /* border: 4px solid yellow; */
+  width: 100vw;
+  text-align: center;
+}
 
-/***** BLOC ****/ #logoFooter{
-display: flex;
-justify-content: center;
-margin-top: 15px;
-margin-bottom: 15px;
+@media screen and (max-width: 768px) {
+  body {
+    width: 90vw;
+  }
+
+  #logo {
+    width: 20vw;
+    /* border: 4px solid cyan; */
+  }
+  #blocphoto {
+    display: flex;
+    margin: 0% 0% 0 0;
+  }
+  #blocLeft {
+    /* border: 4px solid coral; */
+  }
+  #blocCentral {
+    /* border: 4px solid goldenrod; */
+    display: flex;
+    width: 98vw;
+    justify-content: space-around;
+    padding: 2% 2% 0% 2%;
+  }
+
+  #catTalent .formulaire fieldset {
+    /* border: 4px solid greenyellow; */
+    padding: 0 0 0 0;
+  }
+
+  #blocLeft {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 5% 0 0 0;
+  }
 }
-.facebook{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
-}
-.snapchat{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
-}
-.youtube{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
-}
-.instagram{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
-}
-/******** BLOC *****/ #mentionsLégales{
-display: flex;
-justify-content: space-around;
-font-size: xx-small;
-margin-left: 400px;
-margin-right: 400px;
-color: grey;
+
+@media screen and (max-width: 480px) {
+  #logo {
+    width: 40vw;
+  }
+
+  #blocCentral {
+    /* border: 4px solid goldenrod; */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* padding: 2% 0 2% 0;
+    width: 100vw; */
+  }
+
+  .titre {
+    /* border: 1px solid orange; */
+    background-color: black;
+    width: 50vw;
+    text-align: center;
+    padding: 2% 2% 2% 2%;
+  }
+
+  #blocCentral form {
+    /* border: 4px solid red; */
+    width: 97vw;
+  }
+
+  fieldset {
+    /* border: 4px solid blue; */
+    width: 50vw;
+  }
+
+  #catTalent .formulaire fieldset {
+    /* border: 4px solid greenyellow; */
+    padding-left: 24%;
+    align-self: flex-start;
+    width: auto;
+  }
+
+  textarea {
+    width: 65vw;
+    height: 30vw;
+  }
 }
