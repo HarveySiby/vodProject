@@ -1,125 +1,332 @@
-body{
-	margin: 0;
-	padding: 0;
-	background-image: url("../../public/img/fondecran.png");
-	background-repeat: no-repeat;
-	min-height: 100vh;
-	min-width: 100vw;
-	background-size: cover;
-	font-family: arial black;
-}
-h1{
-	display: flex;
-	justify-content: center;
-	color: white;
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../../public/img/fondecran.png");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 90vw;
+  background-size: cover;
+  font-family: arial black;
 }
 
-/**** BLOC ****/ #burger{
-	margin-left: 70px;
-}
-.burger{
-	width: 40px;
-	height: 6px;
-	background-color: white;
-	margin: 6px 0;
-	border-radius: 10px 10px;
-}
-#logo{
-	position: relative;
-	margin-left: 42%;
-	height: 8em;
-	width: 15;
+/***** BLOC SLIDER ****/
+#demo {
+  display: flex;
 }
 
-/****** BLOC ******/ #box1{
-	display: flex;
+/***** BLOC ****/
+#connexion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  color: white;
+  margin-right: 25px;
+}
+#nouveaumembre,
+#dejamembre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 10px 10px;
+  background-color: black;
+  padding: 15px;
 }
 
-/***** BLOC ****/ #application{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 110%;
-	height: auto;
-	color: white;
-	padding-top: 20px;
-}
-.appliTitre{
-	display: flex;
-	justify-content: center;
-	border: 2px solid white;
-	border-radius: 10px 10px;
-	background-color: black;
-	width: 180px;
-	padding: 10px;
-}
-#googlePlay{
-	margin-top: 50px;
-	width: 180px;
-	height: 40px;
-}
-#appleStore{
-	width: 200px;
-	height: 60px;
+.sousHeader {
+  display: flex;
+  justify-content: center;
+  /* border: 4px solid purple; */
+  padding: 2% 0 5% 0;
 }
 
-/***** BLOC SLIDER ****/#demo{
-	display: flex;
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
 }
 
-/***** BLOC ****/ #connexion{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	width: 100%;
-	height: auto;
-	color: white;
-	margin-right: 25px;
-}
-#nouveaumembre,#dejamembre{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border: 2px solid white;
-	border-radius: 10px 10px;
-	background-color: black;
-	padding: 15px;
+/**** BLOC ****/
+
+.burger {
+  width: 40px;
+  height: 6px;
+  background-color: white;
+  margin: 6px 0;
+  border-radius: 10px 10px;
 }
 
-input{
-	border-radius: 5px 5px;
-	text-align: center;
-	font-size: small;
-}
-button{
-	cursor: pointer;
-	background-color: red;
-	margin-top: 20px;
-	margin-bottom: 10px;
-	font-size: x-small;
+#logo img {
+  /* border: blue solid 4px; */
 }
 
-/***** BLOC ****/ 
-#logoFooter{
-	display: flex;
-	justify-content: center;
-	margin-top: 25px;
-	margin-bottom: 25px;
+img {
+  padding: 3% 0 0 0;
+  width: 15vw;
 }
-.facebook,.instagram,.youtube,.snapchat{
-	margin-right: 15px;
-	width: 30px;
-	height: 30px;
-	border-radius: 10px 10px;
+header {
+  display: flex;
+  justify-content: center;
 }
 
-/******** BLOC *****/ #mentionsLégales{
-	display: flex;
-	justify-content: space-around;
-	font-size: xx-small;
-	margin-left: 400px;
-	margin-right: 400px;
-	color: grey;
+/****** BLOC ******/
+
+#box1 {
+  display: flex;
+  /* border: red solid 4px; */
+  margin: 7% 0 0 0;
 }
 
+/***** BLOC ****/
+
+#application {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  height: auto;
+  color: white;
+  padding: 5% 0 5% 0;
+  /* border: 4px solid green; */
+}
+
+.appliTitre {
+  display: flex;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 10px 10px;
+  background-color: black;
+  width: 180px;
+  padding: 10px;
+}
+
+.telechargement a {
+  /* border: red solid 4px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#googlePlay {
+  border: blanchedalmond 3px solid;
+  border-radius: 9%;
+  width: 13vw;
+  background: black;
+}
+
+#appleStore {
+  width: 15vw;
+}
+
+/***** BLOC SLIDER ****/
+
+#demo {
+  display: flex;
+  /* border: 4px solid pink; */
+}
+
+video {
+  width: 50vw;
+}
+
+/***** BLOC ****/
+
+#connexion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  color: white;
+  /* border: 4px solid yellow; */
+}
+
+#nouveaumembre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 10px 10px;
+  background-color: black;
+  padding: 15px;
+}
+
+#dejamembre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 10px 10px;
+  background-color: black;
+  padding: 15px;
+}
+
+input {
+  border-radius: 5px 5px;
+  text-align: center;
+  font-size: small;
+}
+
+button {
+  cursor: pointer;
+  background-color: red;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: x-small;
+}
+
+/***** BLOC FOOTER ****/
+
+#logoFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.facebook,
+.snapchat,
+.youtube,
+.instagram {
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px 10px;
+}
+
+/******** BLOC *****/
+
+#mentionsLégales {
+  text-align: center;
+  font-size: xx-small;
+  color: grey;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 5% 0 0 0;
+    font-family: arial black;
+    /* background: black; */
+  }
+
+  header {
+    margin: 5% 0 5% 0;
+  }
+
+  img {
+    width: 20vw;
+  }
+  #box1 {
+    display: flex;
+    flex-direction: column;
+    /* border: red solid 4px; */
+  }
+
+  .sousHeader {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #application {
+    width: 99vw;
+  }
+  #googlePlay {
+    border: blanchedalmond 3px solid;
+    border-radius: 9%;
+    width: 40vw;
+    background: black;
+    display: none;
+  }
+
+  #appleStore {
+    width: 50vw;
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  #video {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0% 2% 0%;
+    /* background: black; */
+    order: -1;
+  }
+
+  video {
+    width: 100vw;
+    height: 45vh;
+  }
+  #connexion {
+    display: flex;
+    flex-direction: row;
+    padding: 2% 0 2% 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    margin: 10% 0 0 0;
+    font-family: arial black;
+  }
+
+  img {
+    width: 30vw;
+  }
+
+  header {
+    margin: 5% 0 5% 0;
+  }
+
+  #box1 {
+    display: flex;
+    flex-direction: column;
+    /* border: red solid 4px; */
+  }
+
+  .sousHeader {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  #video {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    padding: 2% 0% 2% 0%;
+    /* background: black; */
+  }
+  video {
+    display: flex;
+    height: 30vh;
+  }
+
+  #application {
+    width: 98vw;
+  }
+  #googlePlay {
+    border: blanchedalmond 3px solid;
+    border-radius: 9%;
+    width: 40vw;
+    background: black;
+    display: none;
+  }
+
+  #appleStore {
+    width: 50vw;
+    display: none;
+  }
+
+  #connexion {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0 2% 0;
+  }
+}
