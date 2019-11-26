@@ -10,6 +10,7 @@ body {
   text-shadow: 2px 2px 2px black;
 
   /* très utile pour filtrer un background img : 
+
   backdrop-filter: grayscale(1) contrast(10) blur(1px); 
   background: rgba(0, 0, 0, 0.6); */
 }
@@ -81,7 +82,8 @@ header {
 
 #box1 {
   display: flex;
-  border: red solid 4px;
+  /* border: red solid 4px; */
+
   margin: 2% 0 0 0;
 }
 

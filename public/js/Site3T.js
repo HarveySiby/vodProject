@@ -9,6 +9,7 @@
 $(document).ready(function() {
   //  CONNEXION/INSCRIPTION
   /* Step1:
+
      Objectif : Mettre des event Click sur les boutons correspondant
     
     afin de rediriger les utilisateurs sur la page profil une fois inscrient.
