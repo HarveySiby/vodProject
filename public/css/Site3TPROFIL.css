@@ -2,79 +2,100 @@ body {
   margin: 0 auto;
   padding: 0 auto;
   background-image: url("../../public/img/fondecran.png");
-
   background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vw;
   background-size: cover;
   font-family: arial black;
   color: white;
-
-  text-shadow: 2px 2px 2px black;
 }
-
-header {
+#logo {
+  width: 15vw;
+  /* border: 4px solid cyan; */
+}
+#blocLeft {
+  /* border: 4px solid coral; */
+}
+h1 {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1% 5% 0 5%;
-  border: 4px solid purple;
+  justify-content: center;
 }
 
 .titre {
-  border: 1px solid red;
+  /* border: 1px solid orange; */
   background-color: black;
   width: 20vw;
   text-align: center;
-  font-size: 1rem;
+  padding: 2% 2% 2% 2%;
+}
+.pSpecial {
+  padding: 2% 0% 2% 0%;
+}
+
+#conteneur {
+  /* border: yellow solid 4px; */
+}
+
+.formulaire {
+  >>>>>>>responsiveprofilfont-size: small;
+}
+
+/* BLOC LEFT */
+
+#blocLeft {
+  display: flex;
+  justify-content: space-around;
+  /* border: 4px solid greenyellow; */
+  align-items: center;
+}
+
+/* BLOC CENTRAL */
+#blocCentral {
+  /* border: 4px solid goldenrod; */
+  display: flex;
+  width: 98vw;
+  justify-content: space-around;
+  padding: 3% 15% 2% 17%;
+}
+
+#blocCentral form {
+  /* border: 4px solid red; */
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#catTalent .formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 4px solid rgb(221, 112, 40); */
+}
+
+#catTalent .formulaire fieldset {
+  /* border: 4px solid greenyellow; */
+  width: 20vw;
+  padding: 0 0 0 25%;
 }
 
 #blocphoto {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.formulaire {
-  display: block;
-  font-size: small;
-}
-
-/* BLOC LEFT */
-#blocLeft p {
-  width: 30vw;
-}
-
-#logo img {
-  width: 18vw;
-}
-
-/* BLOC CENTRAL */
-#blocCentral {
-  position: absolute;
-  top: 65%;
-  left: 33.75%;
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
+  margin: 5% 5% 0 0;
+  /* border: 4px solid violet; */
 }
 
 #photoprofil {
-  height: 20vh;
-  width: 10vw;
+  height: 130px;
+  width: 130px;
   border-radius: 50%;
-}
-form {
-  /* border: 4px solid red; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-fieldset {
-  margin: 0 0 0 30%;
-  /* border: 4px solid blueviolet; */
 }
 
 textarea {
-  font-size: 18px;
+  display: flex;
+  width: 40vw;
 }
 
 /* BLOC RIGHT */
@@ -91,6 +112,9 @@ textarea {
   width: 5vw;
   padding: 5px;
   border-radius: 25%;
+  /* border: pink solid 4px; */
+  display: flex;
+  justify-content: center;
 }
 
 #catFans {
@@ -112,10 +136,17 @@ footer {
   display: flex;
   align-items: flex-end;
 }
+
+#logoFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 .facebook,
-.instagram,
 .snapchat,
-.youtube {
+.youtube,
+.instagram {
   margin-right: 15px;
   width: 30px;
   height: 30px;
@@ -148,5 +179,91 @@ footer {
     width: 30vw;
   }
 }
+
+#mentionsLégales {
+  /* border: 4px solid yellow; */
+  width: 100vw;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 90vw;
+  }
+
+  #logo {
+    width: 20vw;
+    /* border: 4px solid cyan; */
+  }
+  #blocphoto {
+    display: flex;
+    margin: 0% 0% 0 0;
+  }
+  #blocLeft {
+    /* border: 4px solid coral; */
+  }
+  #blocCentral {
+    /* border: 4px solid goldenrod; */
+    display: flex;
+    width: 98vw;
+    justify-content: space-around;
+    padding: 2% 2% 0% 2%;
+  }
+
+  #catTalent .formulaire fieldset {
+    /* border: 4px solid greenyellow; */
+    padding: 0 0 0 0;
+  }
+
+  #blocLeft {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 5% 0 0 0;
+  }
+}
+
 @media screen and (max-width: 480px) {
+  #logo {
+    width: 40vw;
+  }
+
+  #blocCentral {
+    /* border: 4px solid goldenrod; */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* padding: 2% 0 2% 0;
+    width: 100vw; */
+  }
+
+  .titre {
+    /* border: 1px solid orange; */
+    background-color: black;
+    width: 50vw;
+    text-align: center;
+    padding: 2% 2% 2% 2%;
+  }
+
+  #blocCentral form {
+    /* border: 4px solid red; */
+    width: 97vw;
+  }
+
+  fieldset {
+    /* border: 4px solid blue; */
+    width: 50vw;
+  }
+
+  #catTalent .formulaire fieldset {
+    /* border: 4px solid greenyellow; */
+    padding-left: 24%;
+    align-self: flex-start;
+    width: auto;
+  }
+
+  textarea {
+    width: 65vw;
+    height: 30vw;
+  }
 }
