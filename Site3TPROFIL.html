@@ -8,51 +8,57 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="public/js/Site3T.js" type="text/js"></script>
     <link rel="stylesheet" type="text/css" href="public/css/Site3TPROFIL.css">
-    <!-- <script src="JQUERY-3.4.1.js"></script> -->
 </head>
 
 <body>
-    <section id="conteneur">
-        <!--ICI SE TROUVE MON BLOC LEFT-->
-        <article id="blocLeft">
-            <img src="public/img/LOGO.png" id="logo" alt="image logo">
-            <p class="titre">Quel est ton style musical ?</p>
-            <form class="formulaire">
-                <fieldset>
-                        <input type="checkbox" id="rap" class="styleMusical">
-                        <label for="rap">RAP</label><br/>
-
-                        <input type="checkbox" id="hiphop" class="styleMusical">
-                        <label for="hiphop">HIP HOP</label><br/>
-
-                        <input type="checkbox" id="reggae" class="styleMusical">
-                        <label for="reggae">REGGAE</label></br>
-
-                        <input type="checkbox" id="raggaDancehall" class="styleMusical">
-                        <label for="raggaDancehall">RAGGA/DANCEHALL</label><br/>
-
-                        <input type="checkbox" id="rock" class="styleMusical">
-                        <label for="rock">ROCK</label><br/>
-
-                        <input type="checkbox" id="houseTechno" class="styleMusical">
-                        <label for="houseTechno">HOUSE/TECHNO</label><br/>
-
-                        <input type="checkbox" id="soulJazz" class="styleMusical">
-                        <label for="soulJazz">SOUL/JAZZ</label><br/>
-                </fieldset>
-            </form>
-        </article>
-
-        <!--ICI SE TROUVE MON BLOC CENTRAL-->
-        <article id="blocCentral">
-            <div id="blocphoto">
-                <h1>TON PROFIL</h1>
-                <img src="public/img/iconprofil.jpg" id="photoprofil" alt="photo de profil">
-                <p><small>AJOUTE UNE PHOTO</small></p>
+    <header>
+        <div id="logo">
+            <img src="public/img/LOGO.png"  alt="image logo">
+        </div>
+        <div id="blocphoto">
+            <h2>TON PROFIL</h2>
+            <img src="public/img/iconprofil.jpg" id="photoprofil" alt="photo de profil">
+            <p><small>AJOUTE UNE PHOTO</small></p>
+        </div>
+        <div>
+            <p><small>Télécharge tes vidéos au format mp4 </small><img src="public/img/download.png" id="photodownload" alt="image chargement" onclick="window.location.href='file:///C:/Users/bessa/Documents/SIMPLON/WireFrame%20Desktop%20Herv%C3%A9/Site3TPageVideo.html'"></p>
             </div>
-            <article id="catTalent">
-                <p class="titre">Quel est ton talent ?</p>
+              
+    </header>
+    <section id="conteneur">
+       
+        <article id="blocRight">
                 <form class="formulaire">
+                        <p class="titre">Quel est ton style musical ?</p>
+    
+                    <fieldset>
+                            <input type="checkbox" id="rap" class="styleMusical">
+                            <label for="rap">RAP</label><br/>
+    
+                            <input type="checkbox" id="hiphop" class="styleMusical">
+                            <label for="hiphop">HIP HOP</label><br/>
+    
+                            <input type="checkbox" id="reggae" class="styleMusical">
+                            <label for="reggae">REGGAE</label></br>
+    
+                            <input type="checkbox" id="raggaDancehall" class="styleMusical">
+                            <label for="raggaDancehall">RAGGA/DANCEHALL</label><br/>
+    
+                            <input type="checkbox" id="rock" class="styleMusical">
+                            <label for="rock">ROCK</label><br/>
+    
+                            <input type="checkbox" id="houseTechno" class="styleMusical">
+                            <label for="houseTechno">HOUSE/TECHNO</label><br/>
+    
+                            <input type="checkbox" id="soulJazz" class="styleMusical">
+                            <label for="soulJazz">SOUL/JAZZ</label><br/>
+                    </fieldset>
+                </form>
+
+            <article id="catTalent">
+                <form class="formulaire">
+                        <p class="titre">Quel est ton talent ?</p>
+
                     <fieldset>
                             <input type="checkbox" id="auteur" class="styleTalent">
                             <label for="auteur">AUTEUR</label><br/>
@@ -65,20 +71,10 @@
                     </fieldset>
                 </form>
             </article>
-
-            <textarea placeholder="Parle nous de toi, de tes expériences, des tes projets musicaux etc..."></textarea>
-            </div>
-        </article>
-
-        <!--ICI SE TROUVE MON BLOC RIGHT-->
-        <article id="blocRight">
-            <div>
-                <p><small>Télécharge tes vidéos au format mp4 </small><img src="public/img/download.png" id="photodownload" alt="image chargement" onclick="window.location.href='file:///C:/Users/bessa/Documents/SIMPLON/WireFrame%20Desktop%20Herv%C3%A9/Site3TPageVideo.html'"></p>
-            </div>
-
             <div id="catFans">
-                <p class="titre">Où tes fans peuvent ils te suivre ?</p>
                 <form class="formulaire">
+                        <p class="titre">Où tes fans peuvent ils te suivre ?</p>
+
                     <fieldset>
                         <input type="checkbox" id="facebook" class="styleFans">
                         <label for="facebook">FACEBOOK</label><br/>
@@ -97,6 +93,14 @@
 
         </article>
     </section>
+    <article id="blocCentral">
+            <label for="story">Présente toi</label>
+
+            <textarea id="story" name="story"
+                      rows="5" cols="33" placeholder="Parle nous de toi, de tes expériences , de tes projets musicaux etc...">
+            It was a dark and stormy night...
+            </textarea>
+    </article>
 
     <!-- ICI SE TROUVE MON FOOTER -->
     <footer>
@@ -108,13 +112,12 @@
         </div>
 
         <div id="mentionsLégales">
-            <p>Légal</p>
-            <p>Centre de confidentialité</p>
-            <p>Protection des données</p>
-            <p>Cookies</p>
-            <p>&Agrave propos des pubs</p>
-            <p>©2019 3T French-Society</p>
-        </div>
+                <p>
+                  Légal Centre de confidentialité 
+                  Protection des données Cookies &Agrave propos des pubs
+                  ©2019 3T French-Society
+                </p>
+              </div>
     </footer>
     <script src="js/site3TPROFIL.js"></script>
 </body>

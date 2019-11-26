@@ -1,140 +1,154 @@
-body{
-margin: 0px;
-padding: 0px;
-background-image: url("../../public/img/fondecran.png");
-background-repeat: no-repeat;
-min-height: 100vh;
-min-width: 100vw;
-background-size: cover;
-font-family: arial black;
-color: white;
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  background-image: url("../../public/img/fondecran.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: arial black;
+  color: white;
+
+  text-shadow: 2px 2px 2px black;
 }
 
-h1{
-display: flex;
-justify-content: center;
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1% 5% 0 5%;
+  border: 4px solid purple;
 }
 
-.titre{
-	border: 1px solid red;
-	background-color: black;
-	width: 330px;
-	text-align: center;
+.titre {
+  border: 1px solid red;
+  background-color: black;
+  width: 20vw;
+  text-align: center;
+  font-size: 1rem;
 }
 
-#conteneur{
-	display: flex;
+#blocphoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.formulaire{
-	display: block;
-	margin-left: 25%;
-	font-size: small;
+.formulaire {
+  display: block;
+  font-size: small;
 }
 
 /* BLOC LEFT */
-#blocLeft{
-	display: flex;
-	flex-direction: column;
-	margin-left: 2%;
+#blocLeft p {
+  width: 30vw;
 }
 
-#logo{
-	height: 3em;
-	width: 6em;
-	margin-top: 2.5%;
-	margin-bottom: 62%;
+#logo img {
+  width: 18vw;
 }
-
 
 /* BLOC CENTRAL */
-#blocCentral{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-left: 10%;
+#blocCentral {
+  position: absolute;
+  top: 65%;
+  left: 33.75%;
+  display: flex;
+  flex-direction: column;
 }
 
-#blocphoto{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 7%;
+#photoprofil {
+  height: 20vh;
+  width: 10vw;
+  border-radius: 50%;
+}
+form {
+  /* border: 4px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#photoprofil{
-	height: 130px; 
-	width: 130px;
-	border-radius: 50%;
+fieldset {
+  margin: 0 0 0 30%;
+  /* border: 4px solid blueviolet; */
 }
 
-textarea{
-	display: flex;
-	margin-top: 8%;
-	margin-bottom: 8%;
-	width: 500px;
-	height: 210px;
+textarea {
+  font-size: 18px;
 }
-
 
 /* BLOC RIGHT */
-#blocRight{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-left: 11%;
+#blocRight {
+  /* border: 4px solid green; */
+  display: flex;
+  justify-content: space-around;
+  padding: 0 9% 0 5%;
+  margin: 3% 0 0 0;
 }
 
-#photodownload{
-	height: 60px; 
-	width: 60px;
-	padding: 5px;
-	border-radius: 25%;
-	display: inline-block;
+#photodownload {
+  height: 10vh;
+  width: 5vw;
+  padding: 5px;
+  border-radius: 25%;
 }
 
-#catFans{
-	margin-top: 57%;
+#catFans {
 }
 
+/***** BLOC ****/
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin: 0 2% 0 24%;
+  /* border: 4px solid pink; */
+  height: 21vh;
+}
+#logoFooter {
+  margin-bottom: 15px;
+  margin-top: 5%;
+  /* border: 4px solid yellow; */
+  display: flex;
+  align-items: flex-end;
+}
+.facebook,
+.instagram,
+.snapchat,
+.youtube {
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px 10px;
+}
 
+/******** BLOC *****/
+#mentionsLégales {
+  /* border: 4px solid red; */
+  display: flex;
+  align-items: flex-end;
+  font-size: xx-small;
+  color: grey;
+}
+@media screen and (max-width: 768px) {
+  body {
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  #logo img {
+    width: 12vw;
+  }
+  #photoprofil {
+    height: 10vh;
+    width: 12vw;
+    border-radius: 50%;
+  }
 
-
-/***** BLOC ****/ #logoFooter{
-display: flex;
-justify-content: center;
-margin-top: 15px;
-margin-bottom: 15px;
+  #blocLeft p {
+    width: 30vw;
+  }
 }
-.facebook{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
-}
-.snapchat{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
-}
-.youtube{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
-}
-.instagram{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
-}
-/******** BLOC *****/ #mentionsLégales{
-display: flex;
-justify-content: space-around;
-font-size: xx-small;
-margin-left: 400px;
-margin-right: 400px;
-color: grey;
+@media screen and (max-width: 480px) {
 }
