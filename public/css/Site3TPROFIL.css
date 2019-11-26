@@ -137,9 +137,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  #logo img {
-    width: 12vw;
-  }
+
   #photoprofil {
     height: 10vh;
     width: 12vw;
