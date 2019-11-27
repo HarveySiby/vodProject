@@ -66,37 +66,20 @@ color: white;
 	width: 100%;
 }
 
-
 /***** BLOC ****/ #logoFooter{
 display: flex;
 justify-content: center;
 margin-top: 15px;
 margin-bottom: 15px;
 }
-.facebook{
+
+.youtube,.instagram,.snapchat,.facebook{
 margin-right: 15px;
 width: 30px;
 height: 30px;
 border-radius: 10px 10px;
 }
-.snapchat{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
-}
-.youtube{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
-}
-.instagram{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
-}
+
 /******** BLOC *****/ #mentionsLégales{
 display: flex;
 justify-content: space-around;
@@ -105,3 +88,79 @@ margin-left: 400px;
 margin-right: 400px;
 color: grey;
 }
+
+@media(max-width:767px){
+	body{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	}
+
+	#blocHearder{
+	display: flex;
+	flex-direction: column;
+	}
+
+	#blocLogo{
+	display: flex;
+	flex-direction: column;
+	margin-right: 35%;
+	margin-left: 20%;
+	}
+
+	#logo{
+	height: 2em;
+	width: 4em;
+	margin-left: 30%;
+	}
+
+	.contact{
+	border: 1px solid red;
+	background-color: white;
+	font-size: xx-small;
+	margin-right: 5%;
+	}
+
+	#blocphoto{
+	display: flex;
+	flex-direction: column;
+	margin-right: 17%;
+	margin-bottom: 5%;
+	}
+
+	h1{
+	font-size: smaller;
+	}
+
+	p{
+	display: none;
+	}
+	#photoprofil{
+	height: 80px; 
+	width: 80px;
+	border-radius: 50%;
+	}
+
+	#blocRecherche{
+	margin-left: 7%;
+	}
+
+	#stockageVideo{
+	display: flex;
+	border: none;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-top: 15%;
+	margin-bottom: 5%;
+	padding-right: 17%;
+	}
+
+	#logoFooter{
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-right: 12%;
+	}
+}
+

@@ -77,7 +77,8 @@ font-family: arial black;
 	border-radius: 10px 10px;
 }
 
-/************** BLOC MENTIONS LEGALES *********/ #mentionsLégales{
+/************** BLOC MENTIONS LEGALES *********/ 
+#mentionsLégales{
 	display: flex;
 	justify-content: space-around;
 	font-size: xx-small;
@@ -85,3 +86,85 @@ font-family: arial black;
 	margin-right: 400px;
 	color: grey;
 }
+
+
+
+@media(max-width:767px){
+	body{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	}
+
+	.logo{
+	display: flex;
+	flex-direction: column;
+	height: 2em;
+	width: 4em;
+	}
+
+	#blocHeader{
+	display: flex;
+	flex-direction: column;
+	}
+
+	.titreContact{
+	display: flex;
+	color: red;
+	background-color: black;
+	border: 1px solid white;
+	width: 6em;
+	border-radius: 10px 10px;
+	font-size: small; 
+	margin-left: 39%;
+	margin-top: 0%;
+	}
+
+	#blocRecherche{
+	display: none;
+	flex-direction: column;
+	font-size: xx-small;
+	margin-left: 5.5%;
+	}
+
+	.blocMailBlaze{
+	display: flex;
+	flex-direction: column;
+	font-size: xx-small;
+	color: white;
+	margin-left: 10%;
+	}
+
+	.mail, .blaze{
+	border-radius: 10px 10px; 
+	}
+
+	.blocTextarea{
+	display: flex;
+	width: 250px;
+	height: 250px;
+	margin-left: 15%;
+	}
+ 
+	#logoFooter{
+	margin-right: 20%;
+	margin-left: 24%;
+	}
+
+	.youtube,.instagram,.snapchat,.facebook{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px 10px;
+	}
+ 
+	#mentionsLégales{
+	display: none;
+	}	
+}
+
+
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
