@@ -1,0 +1,81 @@
+body{
+margin: 0;
+padding: 0;
+background-image: url("../../public/img/fondecran.png");
+background-repeat: no-repeat;
+min-height: 100vh;
+min-width: 100vw;
+background-size: cover;
+font-family: arial black;
+	}
+
+/******* BLOC HEAD LOGO + TITRE + RECHERCHE *******/
+#blocHEAD{
+	display: flex;
+	justify-content: space-between;
+	}
+
+.logo{
+	height: 5em;
+	width: 10em;
+	}
+
+.titre{
+	display: flex;
+	justify-content: center;
+	margin-left: 13%;
+	margin-top: 13%;
+	width: 15em;
+	border: 3px solid white;
+	border-radius: 10px 10px; 
+	background-color: black;
+	color: red;
+	}
+
+#blocSearch{
+	font-size: small;
+	}
+
+/******* BLOC CONTENEUR + 3 BLOCS *******/
+#conteneur{
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	margin-top: 5%;
+	margin-bottom: 15%;
+	}
+
+h4{
+	margin-bottom: 20%;
+	border: 1.5px solid white;
+	border-radius: 10px 10px;
+	background-color: black;
+	color: red;
+	width: 10em;
+	text-align: center;
+	}
+
+/********** BLOC FOOTER *******/ 
+#logoFooter{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+
+.youtube,.instagram,.snapchat,.facebook{
+	margin-right: 15px;
+	width: 30px;
+	height: 30px;
+	border-radius: 10px 10px;
+	}
+
+/************** BLOC MENTIONS LEGALES *********/ 
+#mentionsLégales{
+	display: flex;
+	justify-content: space-around;
+	font-size: xx-small;
+	margin-left: 400px;
+	margin-right: 400px;
+	color: grey;
+	}

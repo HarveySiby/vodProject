@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="public/js/Site3T.js" type="text/js"></script>
     <link rel="stylesheet" type="text/css" href="public/css/Site3TPageContact.css">
-    <script src="public/js/JQUERY-3.4.1.js"></script>
 </head>
 
 	<body>
+
 <!-- ICI SE TROUVE LE BLOC HEADER -->	
+
 		<header id="blocHeader">
 				<div>
 					<img src="public/img/LOGO.png" class="logo" alt="image du logo">
@@ -35,25 +35,29 @@
 				<article class="blocMailBlaze">
 					<div>
 						<p>ENTRE TON E-MAIL</p>
-						<input type="mail" class="mail" name="mail" placeholder="3t@gmail.com">
+						<input type="mail" class="email" placeholder="3t@gmail.com" required="required">
+						<button type="submit" id="validate">VALIDER</button>
 					</div>
 					<div>
 						<p>ENTRE TON BLAZE</p>
-						<input type="text" class="blaze" name="blaze" placeholder="écris ton blaze">
+						<input type="text" class="blaze" placeholder="écris ton blaze" required="required" maxlength="15">
+						<button type="submit" id="validate">VALIDER</button>
 					</div>
 				</article>
+						<h2 id='result'></h2>
 		</section>
 
 		<section>
 				<article>
 					<div class="blocTextarea">
-						<textarea name="contact"  rows="11" cols="60" placeholder="ma réclamation est..." maxlength="800"></textarea>
+						<textarea name="contact"  rows="11" cols="60" placeholder="Ecrit ta réclamation ici..." maxlength="800"></textarea>
 						<button type="button">ENVOYER</button>
 					</div>
 				</article>
 		</section>
 
 <!-- ICI SE TROUVE LE BLOC FOOTER -->		
+		
 		<footer>
 	            <div id="logoFooter">
 	                <a href="https://fr-fr.facebook.com/"><img src="public/img/facebook.jpg" alt="facebook" class="facebook"></a>
@@ -72,8 +76,10 @@
 	            </div>
         </footer>
 
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	    <script src="public/js/JQUERY-3.4.1.js"></script>
+	    <script src="public/js/Site3TPageContact.js"></script>
+	 <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 	</body>
 </html>
