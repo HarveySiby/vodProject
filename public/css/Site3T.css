@@ -24,12 +24,14 @@ body {
 #connexion {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: auto;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* width: 100%; */
+  /* height: auto; */
   color: white;
-  margin-right: 25px;
+  /* margin-right: 25px; */
+  /* border: blue solid 4px; */
+  /* padding: 2% 0 0 0; */
 }
 #nouveaumembre,
 #dejamembre {
@@ -103,7 +105,7 @@ header {
 .appliTitre {
   display: flex;
   justify-content: center;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-radius: 10px 10px;
   background-color: black;
   width: 180px;
