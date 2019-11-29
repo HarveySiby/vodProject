@@ -95,23 +95,56 @@ $(document).ready(function() {
     let username = $("#tonBlaze").val();
     let email = $("#emailInput").val();
     let password = $("#passwordInput").val();
+
     console.log(username, email, password);
     $.post(
       "https://brianboudrioux.fr/simplon/api/users",
       // "https://reqres.in/api/users",
       { username: username, email: email, password: password },
       function(data, status) {
+        //le status me permet de vérifier le succcès ou le rejet de ma requête
+        e.preventDefault();
+
         console.log("data : " + data);
+        console.log(status);
         if (typeof data.errors === "undefined")
+          // ICI --> localstorage/ getItem
+
           // data.errors == undefined  || data.errors === "undefined"
           // data renvoie une chaîne de caractères encore et toujours
           window.location.href = "site3TPROFIL.html";
-        //ça ne fonctionne puisqu'on nous a pas donnée l'autorisation
         else console.log(data.errors);
       }
     );
   });
 
+  $("#logIn").click(function(e) {
+    let email = $("#emailInput1").val();
+    let password = $("#passwordInput1").val();
+
+    console.log(email, password);
+
+    $.post(
+      "https://brianboudrioux.fr/simplon/api/connect",
+      { email: email, password: password },
+      function(data, status) {
+        e.preventDefault();
+        console.log(data);
+        console.log(status);
+        //le status me permet de vérifier le succcès ou le rejet de ma requête
+
+        if (data.auth == true) {
+          //ICI -> setItems ... localstorage
+
+          localStorage.setItem("email", email);
+
+          window.location.href = "site3TPROFIL.html";
+        } else {
+          alert("ouesh!!!!");
+        }
+      }
+    );
+  });
   // ici récupérer toutes les infos sur les auteurs; interprètes; compositeur...
   // des get en somme... Les afficher dans l'espace vidéo
 });
