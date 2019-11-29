@@ -4,21 +4,59 @@ body {
   background-image: url("../../public/img/fondecran.png");
   background-repeat: no-repeat;
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 98vw;
   background-size: cover;
   font-family: arial black;
   color: white;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
 }
 #logo {
   width: 15vw;
   /* border: 4px solid cyan; */
 }
-#blocLeft {
-  /* border: 4px solid coral; */
+
+#blocphoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 4px solid violet; */
 }
-h1 {
+
+#blocLeft {
+  /* border: 4px solid green; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 0 0 8%;
+  margin: 5% 0 1% 0;
+}
+
+#photodownload img {
+  width: 4vw;
+  height: 7vh;
+  border-radius: 25%;
+}
+
+#photodownload {
+  width: 25vw;
+  height: 10vh;
+  /* border: pink solid 4px; */
+
   display: flex;
   justify-content: center;
+}
+
+#photoprofil {
+  width: 10vw;
+  border-radius: 50%;
+}
+
+h1 {
+  /* display: flex;
+  justify-content: center; */
+  /* border: pink solid 4px; */
+  /* font-size: 1.5rem; */
 }
 
 .titre {
@@ -33,21 +71,13 @@ h1 {
 }
 
 #conteneur {
-  /* border: yellow solid 4px; */
 }
 
 .formulaire {
-  >>>>>>>responsiveprofilfont-size: small;
+  font-size: small;
 }
 
 /* BLOC LEFT */
-
-#blocLeft {
-  display: flex;
-  justify-content: space-around;
-  /* border: 4px solid greenyellow; */
-  align-items: center;
-}
 
 /* BLOC CENTRAL */
 #blocCentral {
@@ -78,21 +108,6 @@ h1 {
   padding: 0 0 0 25%;
 }
 
-#blocphoto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 5% 5% 0 0;
-  /* border: 4px solid violet; */
-}
-
-#photoprofil {
-  height: 130px;
-  width: 130px;
-  border-radius: 50%;
-}
-
 textarea {
   display: flex;
   width: 40vw;
@@ -102,19 +117,9 @@ textarea {
 #blocRight {
   /* border: 4px solid green; */
   display: flex;
-  justify-content: space-around;
-  padding: 0 9% 0 5%;
-  margin: 3% 0 0 0;
-}
-
-#photodownload {
-  height: 10vh;
-  width: 5vw;
-  padding: 5px;
-  border-radius: 25%;
-  /* border: pink solid 4px; */
-  display: flex;
   justify-content: center;
+
+  margin: 0% 0 0 0;
 }
 
 #catFans {
@@ -123,18 +128,10 @@ textarea {
 /***** BLOC ****/
 footer {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  margin: 0 2% 0 24%;
+  flex-direction: column;
+  /* align-items: center; */
   /* border: 4px solid pink; */
   height: 21vh;
-}
-#logoFooter {
-  margin-bottom: 15px;
-  margin-top: 5%;
-  /* border: 4px solid yellow; */
-  display: flex;
-  align-items: flex-end;
 }
 
 #logoFooter {
@@ -142,6 +139,7 @@ footer {
   justify-content: center;
   margin-top: 15px;
   margin-bottom: 15px;
+  /* border: 4px solid yellow; */
 }
 .facebook,
 .snapchat,
@@ -157,85 +155,141 @@ footer {
 #mentionsLégales {
   /* border: 4px solid red; */
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
   font-size: xx-small;
   color: grey;
 }
+
+/* IPAD */
 @media screen and (max-width: 768px) {
   body {
-  }
-  header {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #photoprofil {
-    height: 10vh;
-    width: 12vw;
-    border-radius: 50%;
-  }
-
-  #blocLeft p {
-    width: 30vw;
-  }
-}
-
-#mentionsLégales {
-  /* border: 4px solid yellow; */
-  width: 100vw;
-  text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    width: 90vw;
+    padding: 2% 0 0 0;
   }
 
   #logo {
-    width: 20vw;
+    width: 25vw;
     /* border: 4px solid cyan; */
   }
   h1 {
     font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #photodownload {
+    width: 50vw;
+    height: 10vh;
+    /* border: pink solid 4px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
   }
   #blocphoto {
     display: flex;
-    margin: 0% 0% 0 0;
+  }
+  #blocphoto p {
+    text-align: center;
   }
   #blocLeft {
     /* border: 4px solid coral; */
+
+    padding: 0 0 0 2%;
+    /* border: 4px solid greenyellow; */
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0 0 0;
   }
+
   #blocCentral {
     /* border: 4px solid goldenrod; */
     display: flex;
     width: 98vw;
     justify-content: space-around;
-    padding: 2% 2% 0% 2%;
+    padding: 2% 5% 0% 8%;
   }
 
+  #blocCentral form {
+    /* border: 4px solid red; */
+    width: 25vw;
+  }
+  .titre {
+    /* border: 1px solid orange; */
+    background-color: black;
+    width: 25vw;
+    text-align: center;
+    padding: 2% 2% 2% 2%;
+  }
   #catTalent .formulaire fieldset {
-    /* border: 4px solid greenyellow; */
-    padding: 0 0 0 0;
-  }
-
-  #blocLeft {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    margin: 5% 0 0 0;
+    padding: 0 0 0 2%;
+    /* border: 4px solid red; */
   }
 }
 
+/* MOBILE */
 @media screen and (max-width: 480px) {
-  #logo {
-    width: 40vw;
+  body {
+    margin: 5% 0 0 0;
   }
 
+  #logo {
+    /* border: 4px solid cyan; */
+    margin: 5% 0 10% 0;
+  }
   h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #photodownload {
+    width: 100vw;
+    height: 15vh;
+    /* border: pink solid 4px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 1rem;
   }
-  #blocCentral {
+  #photodownload img {
+    width: 11vw;
+    height: 5vh;
+  }
+  #blocphoto {
+    display: flex;
     /* border: 4px solid goldenrod; */
+    width: 100vw;
+    height: 28vh;
+  }
+
+  #blocphoto img {
+    width: 30vw;
+  }
+  #logo {
+    width: 50vw;
+    /* border: 4px solid cyan; */
+  }
+
+  #blocLeft {
+    height: 60vh;
+    /* border: 4px solid pink; */
+    margin: 0 0 0 2.5%;
+  }
+
+  #photodownload {
+    /* width: 100vw;
+    height: 15vh;
+    border: pink solid 4px;
+
+    font-size: 1rem; */
+    padding: 2% 0 0 0;
+  }
+  #photodownload img {
+    width: 10vw;
+    height: 7vh;
+  }
+
+  #blocCentral {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -244,7 +298,7 @@ footer {
   }
 
   .titre {
-    /* border: 1px solid orange; */
+    /* border: 4px solid orange; */
     background-color: black;
     width: 50vw;
     text-align: center;
@@ -271,5 +325,12 @@ footer {
   textarea {
     width: 65vw;
     height: 30vw;
+  }
+  #mentionsLégales {
+    /* border: 4px solid red */
+    margin: 0 15% 0 15%;
+    text-align: center;
+    font-size: xx-small;
+    color: grey;
   }
 }

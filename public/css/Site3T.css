@@ -272,9 +272,10 @@ button {
   #connexion {
     display: flex;
     flex-direction: row;
-    padding: 2% 0 2% 0;
+    padding: 2% 10% 2% 10%;
   }
 }
+
 @media screen and (max-width: 480px) {
   body {
     margin: 10% 0 0 0;
