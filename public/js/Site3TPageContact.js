@@ -7,7 +7,6 @@ $(document).ready(function(){
 });
         
 /********* ICI FONCTION VALIDATION EMAIL ************/
-
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(email);
@@ -30,43 +29,38 @@ function validate() {
 
 $("#validate").on("click", validate);    
 
+/******** ICI SE TROUVE MON LOCAL STORAGE EMAIL **********/
+    var clique = document.getElementById("validate");
+
+    clique.onclick = function (event){
+    var recup = document.querySelector(".email").value;
+    localStorage.setItem("email", recup);
+  }
+
+
 
 /******** ICI FONCTION VALIDATION BLAZE *************/
-let minlenght = 1;
-let maxlenght = 10; 
 
-
-function validateBlaze(blaze){
-
-    if (".blaze".length < 1){
-        $result.text("Ton blaze est valide");
-    	$result.css("color", "green");
-    } else {
-    $result.text("Ton blaze n'est pas valide");
-    $result.css("color", "red");
-  }
-    $("#validate").on("click", validate); 
-}
-
-
-// function validateBlaze(blaze) {
-//   var re = minlenght(3);
+//  function validateBlaze(blaze) {
+//   var re = /^({1,10})/;
 //   return re.test(blaze);
 // }
 
 // function validate() {
-//   var $result = $("#result");
-//   var blaze = $(".blaze").val().length;
-//   $result.text("");
+//   var $result2 = $("#result");
+//   var blaze = $(".blaze").val();
+//   $result2.text2("");
 
 //   if (validateBlaze(blaze)) {
-//     $result.text("Ton blaze est valide");
-//     $result.css("color", "green");
+//     $result2.text("Ton blaze est valide");
+//     $result2.css("color", "green");
 //   } else {
-//     $result.text("Ton blaze n'est pas valide");
-//     $result.css("color", "red");
+//     $result2.text("Ton blaze n'est pas valide");
+//     $result2.css("color", "red");
 //   }
 //   return false;
 // }
 
-// $("#validate").on("click", validate);   
+// $("#validate2").on("click", validate);   
+
+ 
