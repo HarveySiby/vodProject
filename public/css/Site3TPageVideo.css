@@ -2,7 +2,6 @@ body{
 margin: 0px;
 padding: 0px;
 background-image: url("../../public/img/fondecran.png");
-
 background-repeat: no-repeat;
 min-height: 100vh;
 min-width: 100vw;
@@ -60,7 +59,8 @@ color: white;
 #stockageVideo{
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
+	/*justify-content: center;*/
 	border: 1px solid red;
 	height: 500px;
 	width: 100%;

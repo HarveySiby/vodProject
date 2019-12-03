@@ -15,7 +15,7 @@ color: white;
 	display: flex;
 	justify-content: space-around;
 	margin-left: 2%;
-}
+	}
 
 /****** BLOC LEFT + ICON ********/
 .blocLeft{
@@ -23,13 +23,13 @@ color: white;
 	flex-direction: column;
 	align-items: center;
 	width: 15%;
-}
+	}
 
 #logo{
 	height: 3em;
 	width: 5em;
 	margin-bottom: 5%;
-}
+	}
 
 .live{
 	border: 1px solid red;
@@ -37,7 +37,7 @@ color: white;
 	color: white;
 	width: 90%;
 	text-align: center;
-}
+	}
 
 /****** BLOC CENTRAL + ICON ********/
 .blocCentral{
@@ -47,8 +47,7 @@ color: white;
 	padding-top: 3%;
 	justify-content: center;
 	align-items: center;
-}
-
+	}
 
 /****** BLOC RIGHT + ICON ********/
 .blocRight{
@@ -58,31 +57,31 @@ color: white;
 	margin-right: 5%;
 	height: 700px;
 	width: 20%;
-}
+	}
 
 .like,.dontLike{
 	font-size: xx-large;
-}
+	}
 
 .facebookIcon,.instagramIcon,.youtubeIcon,.snapchatIcon,.shareIcon, .downloadIcon{
 	height: 30px;
 	width: 30px;
 	margin-right: 10px;
-}
+	}
 
 /***** BLOC FOOTER ****/ 
 #logoFooter{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+	}
 
 .facebook,.snapchat,.youtube,.instagram{
 	margin-right: 10px;
 	width: 20px;
 	height: 30px;
 	border-radius: 10px 10px;
-}
+	}
 
 /******** BLOC MENTIONS LEGALES *****/ 
 #mentionsLégales{
@@ -92,5 +91,93 @@ color: white;
 	margin-left: 300px;
 	margin-right: 300px;
 	color: grey;
-}
+	}
 
+/*********** MEDIA QUERIES ****************/
+@media(max-width:767px){
+
+	#logo{
+	height: 3em;
+	width: 5em;
+	margin-left: 28%;
+	}
+
+	.live{
+	width: 10em;
+	}
+
+	body{
+	background-image: url("../../public/img/fondecran.png");
+	background-repeat: no-repeat;
+	min-height: 110vh;
+	min-width: 100vw;
+	background-size: cover;
+	font-family: arial black;
+	color: white;
+	}
+
+	.blocLeft{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	}
+
+	#conteneur{
+	display: flex;
+	flex-direction: column;
+	}
+
+	.blocRight{
+	display: flex;
+	
+	}
+
+	.responsiveBlocTitre{
+	display: flex;
+	}
+
+	.responsiveBlocVideo{
+		/*display: flex;*/
+	}
+
+	.like,.dontLike{
+	display: flex;
+	}
+
+	.facebookIcon,.instagramIcon,.youtubeIcon,.snapchatIcon,.shareIcon, .downloadIcon{
+	height: 20px;
+	width: 20px;
+	margin-left: 55%;
+	}
+
+	.responsiveBlocIcon{
+	display: flex;
+	justify-content: space-between;
+	}
+
+	.blocCentral{
+	display: flex;
+	flex-direction: column;
+	width: 5em;
+	height: 5em;
+	}
+
+	.carousel-slide{
+	width: 30em;
+	height: 30em;
+	margin-top: 1500px;
+	}
+
+	#logoFooter{
+	display: none;
+	}
+
+	#mentionsLégales{
+	display: none;
+	justify-content: space-around;
+	font-size: xx-small;
+	color: grey;
+	}
+
+}
