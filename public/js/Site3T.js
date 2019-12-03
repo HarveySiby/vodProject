@@ -6,7 +6,32 @@
 // function slider(){
 //   setInterval(change_image, 1000);
 // }
+
 $(document).ready(function() {
+  /*Placer des vidéos dans le src : corescpondant */
+  let video = "https://brianboudrioux.fr/simplon/api/products/";
+
+  // let rapVideo = video.rap;
+
+  $.get(video).done(function(data) {
+    console.log(data);
+    $.each(data, function(i, data) {
+      console.log(data.media);
+      $("iframe").attr("src", data.media);
+    });
+  });
+
+  //En client sur les boutons genres et artistes, nos utilisateurs  seront redidirigés vers les pages correspondantes
+  $("#genres").click(function(e) {
+    window.location.href = "site3TPROFIL.html";
+    // Site3TPageListe.html
+  });
+
+  $("#artistes").click(function(e) {
+    window.location.href = "site3TPROFIL.html";
+    // Site3TPageListe.html
+  });
+
   //  CONNEXION/INSCRIPTION
   /* Step1:
 
@@ -103,15 +128,12 @@ $(document).ready(function() {
       { username: username, email: email, password: password },
       function(data, status) {
         //le status me permet de vérifier le succcès ou le rejet de ma requête
+
         e.preventDefault();
 
         console.log("data : " + data);
         console.log(status);
         if (typeof data.errors === "undefined")
-          // ICI --> localstorage/ getItem
-
-          // data.errors == undefined  || data.errors === "undefined"
-          // data renvoie une chaîne de caractères encore et toujours
           window.location.href = "site3TPROFIL.html";
         else console.log(data.errors);
       }
@@ -129,7 +151,7 @@ $(document).ready(function() {
       { email: email, password: password },
       function(data, status) {
         e.preventDefault();
-        console.log(data);
+        // console.log(data);
         console.log(status);
         //le status me permet de vérifier le succcès ou le rejet de ma requête
 
@@ -140,7 +162,7 @@ $(document).ready(function() {
 
           window.location.href = "site3TPROFIL.html";
         } else {
-          alert("ouesh!!!!");
+          alert("ouesh!!!!, Account does not exist, please register");
         }
       }
     );

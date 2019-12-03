@@ -105,7 +105,7 @@ header {
 .appliTitre {
   display: flex;
   justify-content: center;
-  /* border: 2px solid white; */
+  border: 2px solid white;
   border-radius: 10px 10px;
   background-color: black;
   width: 180px;
@@ -266,7 +266,7 @@ button {
     /* background: black; */
     order: -1;
   }
-
+  /* ancien video */
   video {
     width: 100vw;
     height: 45vh;
@@ -313,6 +313,7 @@ button {
     padding: 2% 0% 2% 0%;
     /* background: black; */
   }
+  /* ancien video */
   video {
     display: flex;
     height: 30vh;

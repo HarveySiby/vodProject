@@ -27,9 +27,9 @@
     <section>
       <section id="box1">
         <article id="application">
-          <h5 class="appliTitre" onclick="myFunction()">AUTEUR</h5>
-          <h5 class="appliTitre" onclick="myFunction2()">INTERPRÊTE</h5>
-          <h5 class="appliTitre" onclick="myFunction3()">COMPOSITEUR</h5>
+          <h5 class="appliTitre"  id="genres">GENRES</h5>
+          <h5 class="appliTitre" id="artistes">ARTISTES</h5>
+          <!-- <h5 class="appliTitre" onclick="myFunction3()">COMPOSITEUR</h5> -->
           <a href="https://play.google.com/store?hl=fr"
             ><img
               src="public/img/googleplay.png"
@@ -43,6 +43,7 @@
               id="appleStore"
           /></a>
         </article>
+        <!-- http://apps.apple.com/ -->
         <!--BOX SLIDER VIDEO -->
         <article id="video">
           <div id="demo" class="carousel slide" data-ride="carousel">
@@ -54,87 +55,88 @@
               <li data-target="#demo" data-slide-to="4"></li>
             </ul>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <video
-                  width="900"
-                  height="450"
-                  controls
-                  autoplay="true"
-                  autobuffer="true"
-                  muted
-                >
-                  <source src="" type="video/mp4" />
-                  <div class="carousel-caption">
-                    <h3>New York</h3>
-                    <p>We love the Big Apple!</p>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <video
+                        width="900"
+                        height="450"
+                        controls
+                        autoplay="true"
+                        autobuffer="true"
+                        muted
+                      >
+                        <source src="public/video/video8.mp4" type="video/mp4" />
+                        <div class="carousel-caption">
+                          <h3>New York</h3>
+                          <p>We love the Big Apple!</p>
+                        </div>
+                      </video>
+                    </div>
+                    <div class="carousel-item">
+                      <video
+                        width="900"
+                        height="450"
+                        controls
+                        autoplay="true"
+                        autobuffer="true"
+                        muted
+                      >
+                        <source src="public/video/video7.mp4" type="video/mp4" />
+                        <div class="carousel-caption">
+                          <h3>Los Angeles</h3>
+                          <p>We had such a great time in LA!</p>
+                        </div>
+                      </video>
+                    </div>
+                    <div class="carousel-item">
+                      <video
+                        width="900"
+                        height="450"
+                        controls
+                        autoplay="true"
+                        autobuffer="true"
+                        muted
+                      >
+                        <source src="public/video/video6.mp4" type="video/mp4" />
+                        <div class="carousel-caption">
+                          <h3>Los Angeles</h3>
+                          <p>We had such a great time in LA!</p>
+                        </div>
+                      </video>
+                    </div>
+                    <div class="carousel-item">
+                      <video
+                        width="900"
+                        height="450"
+                        controls
+                        autoplay="true"
+                        autobuffer="true"
+                        muted
+                      >
+                        <source src="public/video/video5.mp4" type="video/mp4" />
+                        <div class="carousel-caption">
+                          <h3>Chicago</h3>
+                          <p>Thank you, Chicago!</p>
+                        </div>
+                      </video>
+                    </div>
+                    <div class="carousel-item">
+                      <video
+                        width="900"
+                        height="450"
+                        controls
+                        autoplay="true"
+                        autobuffer="true"
+                        muted
+                      >
+                        <source src="public/video/video4.mp4" type="video/mp4" />
+                        <div class="carousel-caption">
+                          <h3>New York</h3>
+                          <p>We love the Big Apple!</p>
+                        </div>
+                      </video>
+                    </div>
                   </div>
-                </video>
-              </div>
-              <div class="carousel-item">
-                <video
-                  width="900"
-                  height="450"
-                  controls
-                  autoplay="true"
-                  autobuffer="true"
-                  muted
-                >
-                  <source src="" type="video/mp4" />
-                  <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
-                    <p>We had such a great time in LA!</p>
-                  </div>
-                </video>
-              </div>
-              <div class="carousel-item">
-                <video
-                  width="900"
-                  height="450"
-                  controls
-                  autoplay="true"
-                  autobuffer="true"
-                  muted
-                >
-                  <source src="" type="video/mp4" />
-                  <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
-                    <p>We had such a great time in LA!</p>
-                  </div>
-                </video>
-              </div>
-              <div class="carousel-item">
-                <video
-                  width="900"
-                  height="450"
-                  controls
-                  autoplay="true"
-                  autobuffer="true"
-                  muted
-                >
-                  <source src="" type="video/mp4" />
-                  <div class="carousel-caption">
-                    <h3>Chicago</h3>
-                    <p>Thank you, Chicago!</p>
-                  </div>
-                </video>
-              </div>
-              <div class="carousel-item">
-                <video
-                  width="900"
-                  height="450"
-                  controls
-                  autoplay="true"
-                  autobuffer="true"
-                  muted
-                >
-                  <source src="" type="video/mp4" />
-                  <div class="carousel-caption">
-                    <h3>New York</h3>
-                    <p>We love the Big Apple!</p>
-                  </div>
-                </video>
-              </div>
-            </div>
             <a class="carousel-control-prev" href="#demo" data-slide="prev"
               ><span class="carousel-control-prev-icon"></span
             ></a>
@@ -165,7 +167,7 @@
               placeholder="ton mot de passe..."
               id="passwordInput"
             />
-            <button type="button" id="signUp">Inscription</button>
+            <button type="button" id="submitButton">Inscription</button>
           </div>
           <br />
           <div id="dejamembre">
