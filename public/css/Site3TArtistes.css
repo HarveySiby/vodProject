@@ -16,8 +16,8 @@ body {
 }
 
 .logo {
-  height: 5em;
-  width: 10em;
+  height: 5em !important;
+  width: 10em !important;
 }
 
 .contact {
@@ -77,18 +77,26 @@ h4 {
 #requeteCategories {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 18%;
+  /* margin-left: 18%; */
 }
 
 /********** BLOC FOOTER *******/
 #logoFooter {
   display: flex;
   justify-content: center;
+
   margin-top: 20px;
   margin-bottom: 20px;
+  /* border: 4px solid red; */
 }
-
-.youtube,
+#logoFooter a img {
+  margin-right: 15px;
+  border-radius: 10px 10px;
+  /* border: brown 4px solid; */
+  width: 3vw !important;
+  height: 5vh !important;
+}
+/* .youtube,
 .instagram,
 .snapchat,
 .facebook {
@@ -96,7 +104,7 @@ h4 {
   width: 30px;
   height: 30px;
   border-radius: 10px 10px;
-}
+} */
 
 /************** BLOC MENTIONS LEGALES *********/
 #mentionsLégales {

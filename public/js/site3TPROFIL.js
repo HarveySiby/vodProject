@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $("#logo").click(function(e) {
+    window.location.href = "Site3T.html";
+  });
+
   //Uploader une photo et remplacer l'initiale
   $("#photoprofil").click(function(e) {
     $("#imageUpload").click();

@@ -8,28 +8,13 @@
 // }
 
 $(document).ready(function() {
-  /*Placer des vidéos dans le src : corescpondant */
-  let video = "https://brianboudrioux.fr/simplon/api/products/";
-
-  // let rapVideo = video.rap;
-
-  $.get(video).done(function(data) {
-    console.log(data);
-    $.each(data, function(i, data) {
-      console.log(data.media);
-      $("iframe").attr("src", data.media);
-    });
-  });
-
   //En client sur les boutons genres et artistes, nos utilisateurs  seront redidirigés vers les pages correspondantes
   $("#genres").click(function(e) {
-    window.location.href = "site3TPROFIL.html";
-    // Site3TPageListe.html
+    window.location.href = "Site3TPageListe.html";
   });
 
   $("#artistes").click(function(e) {
-    window.location.href = "site3TPROFIL.html";
-    // Site3TPageListe.html
+    window.location.href = "Site3TArtistes.html";
   });
 
   //  CONNEXION/INSCRIPTION
