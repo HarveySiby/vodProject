@@ -28,18 +28,19 @@ font-family: arial black;
 	margin-left: 15%;
 	height: 2em;
 	width: 10em;
-}
+	}
 
 .blocLogo{
 	display: flex;
 	flex-direction: column;
-}
+	}
 
 .titre{
 	display: flex;
 	justify-content: center;
 	margin-left: 13%;
 	margin-top: 13%;
+	margin-bottom: 5%;
 	width: 20em;
 	border: 3px solid white;
 	border-radius: 10px 10px; 
@@ -49,4 +50,40 @@ font-family: arial black;
 
 #blocSearch{
 	font-size: small;
+	}
+
+h4{
+	margin-bottom: 30%;
+	border: 1.5px solid white;
+	border-radius: 10px 10px;
+	background-color: black;
+	color: red;
+	width: 20em;
+	text-align: center;
+	margin-left: 35%;
+	}
+
+/********** BLOC FOOTER *******/ 
+#logoFooter{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+
+.youtube,.instagram,.snapchat,.facebook{
+	margin-right: 15px;
+	width: 30px;
+	height: 30px;
+	border-radius: 10px 10px;
+	}
+
+/************** BLOC MENTIONS LEGALES *********/ 
+#mentionsLégales{
+	display: flex;
+	justify-content: space-around;
+	font-size: xx-small;
+	margin-left: 400px;
+	margin-right: 400px;
+	color: grey;
 	}

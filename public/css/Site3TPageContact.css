@@ -13,12 +13,12 @@ font-family: arial black;
 #blocHeader{
 	display: flex;
 	justify-content: space-between;
-}
+	}
 
 .logo{
 	height: 4em;
 	width: 8em;
-}
+	}
 
 .titreContact{
 	display: flex;
@@ -30,11 +30,12 @@ font-family: arial black;
 	border: 3px solid white;
 	width: 6em;
 	border-radius: 10px 10px; 
-}
+	}
+	
 #blocRecherche{
 	display: block;
 	font-size: small;
-}
+	}
 
 /*********** BLOC CENTRAL ********/
 .blocMailBlaze{
@@ -45,7 +46,7 @@ font-family: arial black;
 	margin-top: 5%;
 	margin-bottom: 2%;
 	color: white;
-}
+	}
 
 /*********** BLOC TEXTAREA *********/
 .blocTextarea{
@@ -56,22 +57,22 @@ font-family: arial black;
 	margin-bottom: 4%;
 	margin-left: 20%;
 	margin-right:20%;
-}
+	}
 
 /********** BLOC FOOTER *******/ 
 #logoFooter{
 	display: flex;
 	justify-content: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
+	margin-top: 90px;
+	margin-bottom: 30px;
+	}
 
 .youtube,.instagram,.snapchat,.facebook{
 	margin-right: 15px;
 	width: 30px;
 	height: 30px;
 	border-radius: 10px 10px;
-}
+	}
 
 /************** BLOC MENTIONS LEGALES *********/ 
 #mentionsLégales{
@@ -81,7 +82,7 @@ font-family: arial black;
 	margin-left: 400px;
 	margin-right: 400px;
 	color: grey;
-}
+	}
 
 /*********** MEDIA QUERIES ****************/
 @media(max-width:767px){
@@ -153,7 +154,7 @@ font-family: arial black;
 	#mentionsLégales{
 	display: none;
 	}	
-}
+}	
 
 @media(min-width:768px){}
 @media(min-width:992px){}

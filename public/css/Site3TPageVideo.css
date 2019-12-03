@@ -15,137 +15,144 @@ color: white;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 1%;
-}
+	}
 
 /* BLOC AVEC LOGO ET CONTACT */
 #blocLogo{
 	display: flex;
 	flex-direction: column;
-}
+	}
 
 #logo{
 	height: 3em;
 	width: 6em;
-}
+	}
 
 .contact{
 	border: 1px solid red;
 	background-color: white;
 	font-size: xx-small;
 	text-align: center;
-}
+	}
 
 /* BLOC PHOTO AVEC H1 */
 #blocphoto{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
+	}
 
 #photoprofil{
 	height: 130px; 
 	width: 130px;
 	border-radius: 50%;
-}
+	}
 
 #blocRecherche{
-	display: flex;
 	font-size: x-small;
 	height: 25px;
-}
+	}
 
 /* BLOC CENTRAL STOCKAGE VIDEO */
+
+.titreTexte{
+	display: flex;
+	margin-left: 26%;
+	padding-top: 1%;
+	}
 
 #stockageVideo{
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	/*justify-content: center;*/
-	border: 1px solid red;
-	height: 500px;
-	width: 100%;
-}
+	
+	height: 400px;
+	width: 80%;
+	margin-left: 10%;
+	}
 
 /***** BLOC ****/ #logoFooter{
-display: flex;
-justify-content: center;
-margin-top: 15px;
-margin-bottom: 15px;
-}
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	}
 
 .youtube,.instagram,.snapchat,.facebook{
-margin-right: 15px;
-width: 30px;
-height: 30px;
-border-radius: 10px 10px;
-}
+	margin-right: 15px;
+	width: 30px;
+	height: 30px;
+	border-radius: 10px 10px;
+	}
 
-/******** BLOC *****/ #mentionsLégales{
-display: flex;
-justify-content: space-around;
-font-size: xx-small;
-margin-left: 400px;
-margin-right: 400px;
-color: grey;
-}
+/******** BLOC *****/ 
+#mentionsLégales{
+	display: flex;
+	justify-content: space-around;
+	font-size: xx-small;
+	margin-left: 400px;
+	margin-right: 400px;
+	color: grey;
+	}
 
+/********* ICI EST LE RESPONSIVE ***********/ 
 @media(max-width:767px){
-	body{
+body{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	}
 
-	#blocHearder{
+#blocHearder{
 	display: flex;
 	flex-direction: column;
 	}
 
-	#blocLogo{
+#blocLogo{
 	display: flex;
 	flex-direction: column;
 	margin-right: 35%;
 	margin-left: 20%;
 	}
 
-	#logo{
+#logo{
 	height: 2em;
 	width: 4em;
 	margin-left: 30%;
 	}
 
-	.contact{
+.contact{
 	border: 1px solid red;
 	background-color: white;
 	font-size: xx-small;
 	margin-right: 5%;
 	}
 
-	#blocphoto{
+#blocphoto{
 	display: flex;
 	flex-direction: column;
 	margin-right: 17%;
 	margin-bottom: 5%;
 	}
 
-	h1{
+h1{
 	font-size: smaller;
 	}
 
-	p{
+p{
 	display: none;
 	}
-	#photoprofil{
+#photoprofil{
 	height: 80px; 
 	width: 80px;
 	border-radius: 50%;
 	}
 
-	#blocRecherche{
+#blocRecherche{
 	margin-left: 7%;
 	}
 
-	#stockageVideo{
+#stockageVideo{
 	display: flex;
 	border: none;
 	flex-direction: column;
@@ -155,7 +162,7 @@ color: grey;
 	padding-right: 17%;
 	}
 
-	#logoFooter{
+#logoFooter{
 	display: flex;
 	justify-content: center;
 	margin-top: 15px;

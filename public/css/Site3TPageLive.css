@@ -29,18 +29,19 @@ color: white;
 	height: 3em;
 	width: 5em;
 	margin-bottom: 5%;
+	margin-left: 3em;
 	}
 
 .live{
 	border: 1px solid red;
 	background-color: black;
 	color: white;
-	width: 90%;
+	width: 10em;
 	text-align: center;
 	}
 
 /****** BLOC CENTRAL + ICON ********/
-.blocCentral{
+#blocCentral{
 	display: flex;
 	width: 55%;
 	flex-direction: column;

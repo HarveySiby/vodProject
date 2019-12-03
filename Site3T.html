@@ -9,7 +9,12 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="public/css/Site3T.css" />
+
     <script src="public/js/JQUERY-3.4.1.js"></script>
   </head>
 
@@ -63,7 +68,7 @@
                   autobuffer="true"
                   muted
                 >
-                  <source src="" type="video/mp4" />
+                  <source src="public/img/video1.mp4" type="video/mp4" />
                   <div class="carousel-caption">
                     <h3>New York</h3>
                     <p>We love the Big Apple!</p>
@@ -79,7 +84,7 @@
                   autobuffer="true"
                   muted
                 >
-                  <source src="" type="video/mp4" />
+                  <source src="public/img/video2.mp4" type="video/mp4" />
                   <div class="carousel-caption">
                     <h3>Los Angeles</h3>
                     <p>We had such a great time in LA!</p>
@@ -95,7 +100,7 @@
                   autobuffer="true"
                   muted
                 >
-                  <source src="" type="video/mp4" />
+                  <source src="public/img/video3.mp4" type="video/mp4" />
                   <div class="carousel-caption">
                     <h3>Los Angeles</h3>
                     <p>We had such a great time in LA!</p>
@@ -111,7 +116,7 @@
                   autobuffer="true"
                   muted
                 >
-                  <source src="" type="video/mp4" />
+                  <source src="public/img/video4.mp4" type="video/mp4" />
                   <div class="carousel-caption">
                     <h3>Chicago</h3>
                     <p>Thank you, Chicago!</p>
@@ -127,7 +132,7 @@
                   autobuffer="true"
                   muted
                 >
-                  <source src="" type="video/mp4" />
+                  <source src="public/img/video5.mp4" type="video/mp4" />
                   <div class="carousel-caption">
                     <h3>New York</h3>
                     <p>We love the Big Apple!</p>
@@ -144,6 +149,7 @@
           </div>
         </article>
         <!-- CONNEXION/INSCRIPTION -->
+
         <article id="connexion">
           <div id="nouveaumembre">
             <h5>Nouveau Membre</h5>
@@ -165,7 +171,7 @@
               placeholder="ton mot de passe..."
               id="passwordInput"
             />
-            <button type="button" id="signUp">Inscription</button>
+            <button type="button" id="submitButton">Inscription</button>
           </div>
           <br />
           <div id="dejamembre">
@@ -174,13 +180,13 @@
               type="email"
               name="email"
               placeholder="email@hotmail.fr"
-              id="emailInput1"
+              class="form-controls"
             />
             <input
               type="password"
               name="password"
               placeholder="ton mot de passe"
-              id="passwordInput1"
+              class="form-controls"
             />
             <button type="button" id="logIn">
               Connexion
@@ -218,8 +224,5 @@
       </footer>
     </section>
     <script src="public/js/Site3T.js" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>
