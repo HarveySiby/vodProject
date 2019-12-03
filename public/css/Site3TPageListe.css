@@ -1,107 +1,109 @@
-body{
-margin: 0;
-padding: 0;
-background-image: url("../../public/img/fondecran.png");
-background-repeat: no-repeat;
-min-height: 100vh;
-min-width: 100vw;
-background-size: cover;
-font-family: arial black;
-	}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../../public/img/fondecran.png");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-size: cover;
+  font-family: arial black;
+}
 
 /******* BLOC HEAD LOGO + TITRE + RECHERCHE *******/
-#blocHEAD{
-	display: flex;
-	justify-content: space-between;
-	}
-
-.logo{
-	height: 5em;
-	width: 10em;
-	}
-
-.contact{
-	border: 1px solid red;
-	background-color: white;
-	font-size: xx-small;
-	text-align: center;
-	margin-left: 15%;
-	height: 2em;
-	width: 10em;
+#blocHEAD {
+  display: flex;
+  justify-content: space-between;
 }
 
-.blocLogo{
-	display: flex;
-	flex-direction: column;
+.logo {
+  height: 5em;
+  width: 10em;
 }
 
-.titre{
-	display: flex;
-	justify-content: center;
-	margin-left: 13%;
-	margin-top: 13%;
-	width: 20em;
-	border: 3px solid white;
-	border-radius: 10px 10px; 
-	background-color: black;
-	color: red;
-	}
+.contact {
+  border: 1px solid red;
+  background-color: white;
+  font-size: xx-small;
+  text-align: center;
+  margin-left: 15%;
+  height: 2em;
+  width: 10em;
+}
 
-#blocSearch{
-	font-size: small;
-	}
+.blocLogo {
+  display: flex;
+  flex-direction: column;
+}
+
+.titre {
+  display: flex;
+  justify-content: center;
+  margin-left: 13%;
+  margin-top: 13%;
+  width: 20em;
+  border: 3px solid white;
+  border-radius: 10px 10px;
+  background-color: black;
+  color: red;
+}
+
+#blocSearch {
+  font-size: small;
+}
 
 /******* BLOC CONTENEUR + 3 BLOCS *******/
-#conteneur{
-	display: flex;
-	color: white;
-	margin-top: 5%;
-	}
-
-h4{
-	margin-bottom: 5%;
-	border: 1.5px solid white;
-	border-radius: 10px 10px;
-	background-color: black;
-	color: red;
-	width: 15em;
-	text-align: center;
-	margin-left: 38%;
-	}
-
-.blocCategories{
-	display: flex;
-	flex-direction: column;
+#conteneur {
+  display: flex;
+  color: white;
+  margin-top: 5%;
 }
 
-#requeteCategories{
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: 18%;
-
+h4 {
+  margin-bottom: 5%;
+  border: 1.5px solid white;
+  border-radius: 10px 10px;
+  background-color: black;
+  color: red;
+  width: 15em;
+  text-align: center;
+  margin-left: 38%;
 }
 
-/********** BLOC FOOTER *******/ 
-#logoFooter{
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	}
+.blocCategories {
+  display: flex;
+  flex-direction: column;
+}
 
-.youtube,.instagram,.snapchat,.facebook{
-	margin-right: 15px;
-	width: 30px;
-	height: 30px;
-	border-radius: 10px 10px;
-	}
+#requeteCategories {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 18%;
+}
 
-/************** BLOC MENTIONS LEGALES *********/ 
-#mentionsLégales{
-	display: flex;
-	justify-content: space-around;
-	font-size: xx-small;
-	margin-left: 400px;
-	margin-right: 400px;
-	color: grey;
-	}
+/********** BLOC FOOTER *******/
+#logoFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.youtube,
+.instagram,
+.snapchat,
+.facebook {
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px 10px;
+}
+
+/************** BLOC MENTIONS LEGALES *********/
+#mentionsLégales {
+  display: flex;
+  justify-content: space-around;
+  font-size: xx-small;
+  margin-left: 400px;
+  margin-right: 400px;
+  color: grey;
+}

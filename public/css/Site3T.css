@@ -42,7 +42,12 @@ body {
 .sousHeader {
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
   padding: 2% 0 2% 0;
+=======
+  /* border: 4px solid purple; */
+  padding: 1% 0 1% 0;
+>>>>>>> 4caa12d0210af3c2c8c2e514cc537654aa1be141
 }
 
 h1 {
@@ -66,7 +71,7 @@ h1 {
 }
 
 img {
-  padding: 3% 0 0 0;
+  padding: 1% 0 0 0;
   width: 15vw;
 }
 header {
@@ -98,6 +103,10 @@ header {
 .appliTitre {
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
+=======
+  border: 2px solid white;
+>>>>>>> 4caa12d0210af3c2c8c2e514cc537654aa1be141
   border-radius: 10px 10px;
   background-color: black;
   border: 1px solid white;
@@ -251,7 +260,7 @@ button {
     /* background: black; */
     order: -1;
   }
-
+  /* ancien video */
   video {
     width: 100vw;
     height: 45vh;
@@ -300,6 +309,7 @@ button {
     padding: 2% 0% 2% 0%;
     /* background: black; */
   }
+  /* ancien video */
   video {
     display: flex;
     height: 30vh;
